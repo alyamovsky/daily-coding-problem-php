@@ -1,0 +1,6 @@
+{
+    "name": "ddlzz/daily-coding-challenge-php",
+    "require": {
+        "php": "^7.4"
+    }
+}
