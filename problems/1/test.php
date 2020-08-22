@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/solution.php';
 
-@ini_set('zend.assertions',  '-1');
+@ini_set('zend.assertions',  '1');
 ini_set('assert.active', '1');
 
 assert(2.0 === calculateLineLength(new Coordinates(1, 1), new Coordinates(1, 3)));
