@@ -1,4 +1,4 @@
-### 600 (easy)
+### Problem #600 [Easy]
 
 This problem was asked by Google.
 

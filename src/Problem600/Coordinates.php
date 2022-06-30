@@ -6,29 +6,15 @@ namespace App\Problem600;
 
 final class Coordinates
 {
-    private int $x;
-
-    private int $y;
-
-    public function __construct(int $x, int $y)
-    {
-        $this->x = $x;
-        $this->y = $y;
-    }
-
-    public function getX(): int
-    {
-        return $this->x;
-    }
-
-    public function getY(): int
-    {
-        return $this->y;
+    public function __construct(
+        public readonly int $x,
+        public readonly int $y,
+    ) {
     }
 
     public function isEqual(Coordinates $coordinates): bool
     {
-        return $this->x === $coordinates->getX() && $this->y === $coordinates->getY();
+        return $this->x === $coordinates->x && $this->y === $coordinates->y;
     }
 
     public function toArray(): array

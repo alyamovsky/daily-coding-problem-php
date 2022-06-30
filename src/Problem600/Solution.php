@@ -8,13 +8,13 @@ final class Solution
 {
     public static function calculateLineLength(Coordinates $firstCoordinates, Coordinates $secondCoordinates): float
     {
-        $a = $firstCoordinates->getX() > $secondCoordinates->getX()
-            ? $firstCoordinates->getX() - $secondCoordinates->getX()
-            : $secondCoordinates->getX() - $firstCoordinates->getX();
+        $a = $firstCoordinates->x > $secondCoordinates->x
+            ? $firstCoordinates->x - $secondCoordinates->x
+            : $secondCoordinates->x - $firstCoordinates->x;
 
-        $b = $firstCoordinates->getY() > $secondCoordinates->getY()
-            ? $firstCoordinates->getY() - $secondCoordinates->getY()
-            : $secondCoordinates->getY() - $firstCoordinates->getY();
+        $b = $firstCoordinates->y > $secondCoordinates->y
+            ? $firstCoordinates->y - $secondCoordinates->y
+            : $secondCoordinates->y - $firstCoordinates->y;
 
         return sqrt($a ** 2) + sqrt($b ** 2);
     }

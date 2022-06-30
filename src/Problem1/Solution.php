@@ -2,10 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Problem2;
+namespace App\Problem1;
 
 final class Solution
 {
+    /**
+     * Complexity: O(N2)
+     */
     public static function checkTwoArrayElementsSumForeach(array $elements, int $reference): bool
     {
         foreach ($elements as $firstElement) {
@@ -19,6 +22,9 @@ final class Solution
         return false;
     }
 
+    /**
+     * Complexity: O(N)
+     */
     public static function checkTwoArrayElementsSumSet(array $elements, int $reference): bool
     {
         // 10, 15, 3, *7*
