@@ -3,3 +3,4 @@
 phpunit.xml
 docker-compose.override.yaml
 .phpunit.result.cache
+/src/*/notes.md
